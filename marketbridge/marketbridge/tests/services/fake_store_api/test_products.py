@@ -1,4 +1,4 @@
-from marketbridge.tests.services.fake_store_api.test_base import BaseFakeStoreTest
+from marketbridge.tests.services.fake_store_api.base_test import BaseFakeStoreTest
 
 class TestFetchProducts(BaseFakeStoreTest):
     ENTITY = "products"
