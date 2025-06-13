@@ -1,3 +1,9 @@
 django
 djangorestframework
 psycopg[binary, pool]
+pytest
+pytest-django
+pytest-sugar
+pytest-cov
+requests
+requests-mock
