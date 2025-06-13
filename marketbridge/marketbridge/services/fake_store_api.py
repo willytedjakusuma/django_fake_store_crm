@@ -6,7 +6,7 @@ class FakeStoreAPI:
     def __init__(self):
         self.base_url = os.environ['FAKESTORE_URL'].rstrip('/')
 
-    def fetch_logic(self, entity: str):
+    def fetch(self, entity: str):
         url = f"{self.base_url}/{entity}"
         
         try:
@@ -26,9 +26,3 @@ class FakeStoreAPI:
             raise ValueError(f"Unexpected response format")
 
         return data
-
-    def fetch_users(self):
-        return self.fetch_logic("users")
-
-    def fetch_products(self):
-        return self.fetch_logic("products")
