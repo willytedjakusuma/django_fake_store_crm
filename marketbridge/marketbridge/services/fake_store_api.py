@@ -1,9 +1,10 @@
 import requests
+import os
 from requests.exceptions import HTTPError
 
-class FakeStore:
-    def __init__(self, base_url: str):
-        self.base_url = base_url.rstrip('/')
+class FakeStoreAPI:
+    def __init__(self):
+        self.base_url = os.environ['FAKESTORE_URL'].rstrip('/')
 
     def fetch_logic(self, entity: str):
         url = f"{self.base_url}/{entity}"
@@ -28,3 +29,6 @@ class FakeStore:
 
     def fetch_users(self):
         return self.fetch_logic("users")
+
+    def fetch_products(self):
+        return self.fetch_logic("products")
