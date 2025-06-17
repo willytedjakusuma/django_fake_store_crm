@@ -1,6 +1,6 @@
-from marketbridge.tests.services.fake_store_api.base_test import BaseFakeStoreTest
+from marketbridge.tests.services.fake_store_api.fetch.base_fetch_test import BaseFetchTest
 
-class TestFetchProducts(BaseFakeStoreTest):
+class TestFetchProducts(BaseFetchTest):
     ENTITY = "products"
     RESPONSE_DATA = [
         {"id": 1, "title": "Product A", "price": 19.99, "description": "Description of Product A", "category": "Category A", "image": "http://example.com/imageA.jpg"},

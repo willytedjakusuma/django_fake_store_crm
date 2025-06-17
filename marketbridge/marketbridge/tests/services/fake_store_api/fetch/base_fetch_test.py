@@ -3,7 +3,7 @@ import pytest
 from os import environ
 from requests.exceptions import HTTPError
 
-class BaseFakeStoreTest:
+class BaseFetchTest:
     ENTITY = None
     RESPONSE_DATA = []
 

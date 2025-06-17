@@ -1,6 +1,6 @@
-from marketbridge.tests.services.fake_store_api.base_test import BaseFakeStoreTest
+from marketbridge.tests.services.fake_store_api.fetch.base_fetch_test import BaseFetchTest
 
-class TestFetchUsers(BaseFakeStoreTest):
+class TestFetchUsers(BaseFetchTest):
     ENTITY = "users"
     RESPONSE_DATA = [
         {
