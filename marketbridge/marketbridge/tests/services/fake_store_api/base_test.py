@@ -17,7 +17,7 @@ class BaseFakeStoreTest:
             requests_mock.get(url, json=json_response)
 
     def FakeStore(self):
-        from marketbridge.services.fake_store_api import FakeStoreAPI
+        from marketbridge.services.fake_store_api.fetch import FakeStoreAPI
         return FakeStoreAPI()
 
     def test_success(self, requests_mock):
