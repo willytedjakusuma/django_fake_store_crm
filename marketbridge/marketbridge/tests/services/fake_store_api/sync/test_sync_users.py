@@ -1,9 +1,7 @@
 from marketbridge.tests.services.fake_store_api.sync.base_sync_test import BaseSyncTest
-from marketbridge.accounts.models import User
 
 class TestSyncUsers(BaseSyncTest):
-    ENTITY = User
-    ENTITY_NAME = "users"
+    ENTITY = "users"
     ENTITY_DATA = [
         {
             "id": 1,
